@@ -1,0 +1,188 @@
+<!--   Name: Jurre Brandsen
+   Student number: 11808918
+   
+   This script represents the percentage of elderly people per country per year, 
+   ranging from 1960 to 2016
+   
+   I have used a dataset from the Worldbank (https://data.worldbank.org)
+   
+   You can switch through the years by using the slider.
+   The graph will update automaticly.
+   
+   sources used(HTML):
+   - https://startbootstrap.com/template-overviews/freelancer/ 
+   - https://data.oecd.org/pop/elderly-population.htm -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      
+      <!-- Meta data -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="Author: Jurre Brandsen" content="">
+      <title>Percentage of elderly people of the world</title>
+      
+      <!-- Scripts -->
+      <script src="js/lib/d3.min.js"></script>
+      <script src="js/lib/d3.queue.js"></script>
+      <script src="js/lib/d3.topo.js"></script>
+      <script src="js/lib/d3-tip.js"></script>
+      <script src="js/script.js"></script>
+     
+      <!-- Bootstrap core CSS -->
+      <link href="css/lib/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      
+      <!-- Custom fonts for template -->
+      <link href="css/lib/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="css/lib/font.css" rel="stylesheet" type="text/css">
+      <link href="css/lib/font2.css" rel="stylesheet" type="text/css">
+      
+      <!-- favicon -->
+      <link rel="icon" href="img/line-chart.png">
+
+      <!-- Import CSS -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/lib/bootstrapcss.css">
+   </head>
+   <body>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+         <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Dataprocessing week 6</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#main">Data visualisation</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#story">Story</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#design">Design</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <!-- Header -->
+      <header class="masthead">
+         <div class="container">
+            <div class="intro-text">
+               <span class="name">PERCENTAGE OF ELDERLY PEOPLE OF THE WORLD</span>
+               <span class="skills">Jurre Brandsen - 18808918</span>
+               <hr class="star-light">
+            </div>
+         </div>
+      </header>
+
+      <!-- Main -->
+      <section id="main">
+         <div class="container">
+            <div id="slidecontainer">
+               <h2 class="text-center">
+                  <span id="countrypopulation"></span><span id="years"></span>
+               </h2>
+               <span>1960 </span>
+               <input type="range" min="1960" max="2016" value="50" class="slider" id="range"><span> 2016</span>
+            </div>
+            <div class="row" id="datavisualisation_worldmap">
+               <svg id="worldmap"></svg>
+               <svg id="barchart"></svg>
+               <h6 class="text-center">
+                  <span id="value"></span>
+               </h6>
+            </div>
+         </div>
+         <p>Source: <a href="https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?end=2015&start=1960&type=shaded&view=chart&year=2015">Worldbank</a></p>
+      </section>
+
+      <!-- Story -->
+      <section class="success" id="story">
+         <div class="container">
+            <h2 class="text-center">Background</h2>
+            <hr class="star-light">
+            <div class="row">
+               <div class="col-lg-12 ml-auto">
+                  <p>The elderly population is defined as people aged 65 and over. The share of the dependent population is calculated as total elderly and youth population expressed as a ratio of the total population. The elderly dependency rate is defined as the ratio between the elderly population and the working age (15-64 years) population. The comparability of elderly population data is affected by differences, both within and across countries, in how regions and the geography of rural and urban communities, are defined. Elderly people tend to be concentrated in few areas within each country, which means that a small number of regions will have to face a number of specific social and economic challenges due to population ageing. These demographic trends have a number of implications for government and private spending on pensions, health care, and education and, more generally, for economic growth and welfare. This indicator is measured as a percentage of population.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Design -->
+      <section id="design">
+         <div class="container">
+            <h2 class="text-center">Design</h2>
+            <h3>Data:</h3>
+            <p>Data is gathered from the world data bank. I’ve tried to combine two different datasets this assignment. To show the percentage of elderly people in all countries of the world I have also gathered the percentage over the year.</p>
+            <p>The data that was reproduced by the world data bank was unusable at first, by converting about 60.000 lines of code semi-manually I made the code useable for my scope.</p>
+            <h3>Design choices:</h3>
+            <ul>
+               <li>
+                  Webdesign:
+                  <ul>
+                     <li>I used a bootstrap template and abstracted what I needed from the template to create my own website.</li>
+                     <li>The menu items in the header are clickable and will take you to the represented page height.</li>
+                     <li>The website is semi-responsive. I wasn’t able to make my SVG elements responsive, due a lack of time</li>
+                     <li>I have created a small 404 page for when a error occurs.</li>
+                  </ul>
+               </li>
+               <li>
+                  Worldmap:
+                  <ul>
+                     <li>The map shows every country and starts with data from 1960.</li>
+                     <li>All countries are colored via a gradient, based on the percentage of elderly people.</li>
+                     <li>The mouse over attributes will clarify the location of the cursor.</li>
+                     <li>The data on the worldmap can be updated via the silder.</li>
+                     <li>More detailed data of a country can be viewed when clicking the concerned country.</li>
+                  </ul>
+               </li>
+               <li>
+                  Barchart:
+                  <ul>
+                     <li>The chart shows one the detailed data of one country.</li>
+                     <li>The current year is highlighted.</li>
+                     <li>The graph will update if a new country is selected.</li>
+                     <li>The graph is invisible upon loading the website. This way the graph will be made once.</li>
+                     <li>In a mouseover event the values will appear in a span within the html</li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center">
+         <div class="footer-above">
+            <div class="container">
+               <div class="row">
+                  <div class="footer-col col-md-6" id="contact">
+                     <h3>Design by:</h3>
+                     <p>Jurre Brandsen
+                        <br>
+                        <a href="mailto:jurrebrandsen@gmail.com?Subject=Contact" target="_top">jurrebrandsen@gmail.com</a>
+                        <br>18808918
+                     </p>
+                  </div>
+                  <div class="footer-col col-md-6">
+                     <h3>Github</h3>
+                     <p><a href="https://github.com/JurreBrandsen1709/Dataprocessing-Jurre-Brandsen/tree/master/homework/week_6">View source code</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
+<!-- 
+   Name: Jurre Brandsen
+   Student number: 11808918
+   
+   
+   -->

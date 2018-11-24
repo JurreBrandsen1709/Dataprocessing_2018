@@ -1,0 +1,210 @@
+[
+  {
+    "country": "Central African Republic",
+    "mort1960": "164.6",
+    "mort2015": "91.2",
+    "income1960": "0.1",
+    "income2015": "1.5",
+    "continent": "West-Africa"
+  },
+  {
+    "country": "Cote d'Ivoire",
+    "mort1960": "212.1",
+    "mort2015": "68",
+    "income1960": "0.5",
+    "income2015": "32.8",
+    "continent": "West-Africa"
+  },
+  {
+    "country": "Benin",
+    "mort1960": "272.2",
+    "mort2015": "78.0",
+    "income1960": "0.2",
+    "income2015": "8.3",
+    "continent": "West-Africa"
+  },
+  {
+    "country": "Togo",
+    "mort1960": "189.7",
+    "mort2015": "64.6",
+    "income1960": "0.1",
+    "income2015": "4.1",
+    "continent": "West-Africa"
+  },
+  {
+    "country": "Liberia",
+    "mort1960": "315.5",
+    "mort2015": "70.1",
+    "income1960": "0.2",
+    "income2015": "2.0",
+    "continent": "West-Africa"
+  },
+  {
+    "country": "Algeria",
+    "mort1960": "244",
+    "mort2015": "25.5",
+    "income1960": "2.7",
+    "income2015": "161.2",
+    "continent": "North-Africa"
+  },
+  {
+    "country": "Egypt",
+    "mort1960": "313.2",
+    "mort2015": "23.7",
+    "income1960": "",
+    "income2015": "218.9",
+    "continent": "North-Africa"
+  },
+  {
+    "country": "Libya",
+    "mort1960": "278.4",
+    "mort2015": "13.4",
+    "income1960": "",
+    "income2015": "74.7",
+    "continent": "North-Africa"
+  },
+  {
+    "country": "Morocco",
+    "mort1960": "237.1",
+    "mort2015": "28",
+    "income1960": "2.0",
+    "income2015": "93.2",
+    "continent": "North-Africa"
+  },
+  {
+    "country": "Tunisia",
+    "mort1960": "268",
+    "mort2015": "14",
+    "income1960": "",
+    "income2015": "44.1",
+    "continent": "North-Africa"
+  },
+  {
+    "country": "Cameroon",
+    "mort1960": "164",
+    "mort2015": "54.5",
+    "income1960": "0.6",
+    "income2015": "28.4",
+    "continent": "Central-Africa"
+  },
+  {
+    "country": "Congo, Rep.",
+    "mort1960": "110.1",
+    "mort2015": "39.2",
+    "income1960": "0.1",
+    "income2015": "8.5",
+    "continent": "Central-Africa"
+  },
+  {
+    "country": "Burkina Faso",
+    "mort1960": "344",
+    "mort2015": "88.5",
+    "income1960": "0.3",
+    "income2015": "11.1",
+    "continent": "South-Africa"
+  },
+  {
+    "country": "Botswana",
+    "mort1960": "169.1",
+    "mort2015": "42.1",
+    "income1960": "0.03",
+    "income2015": "14.4",
+    "continent": "South-Africa"
+  },
+  {
+    "country": "Lesotho",
+    "mort1960": "191.2",
+    "mort2015": "97.7",
+    "income1960": "0.03",
+    "income2015": "2.3",
+    "continent": "South-Africa"
+  },
+  {
+    "country": "Zimbabwe",
+    "mort1960": "150.5",
+    "mort2015": "59.9",
+    "income1960": "1.1",
+    "income2015": "16.1",
+    "continent": "South-Africa"
+  },
+  {
+    "country": "Zanbia",
+    "mort1960": "205.9",
+    "mort2015": "66.1",
+    "income1960": "0.7",
+    "income2015": "21.5",
+    "continent": "South-Africa"
+  },
+  {
+    "country": "Bolivia",
+    "mort1960": "175",
+    "mort2015": "30.5",
+    "income1960": "0.5",
+    "income2015": "33.0",
+    "continent": "South-America"
+  },
+  {
+    "country": "Dominica",
+    "mort1960": "84.4",
+    "mort2015": "30.2",
+    "income1960": "0.6",
+    "income2015": "68.1",
+    "continent": "South-America"
+  },
+  {
+    "country": "Colombia",
+    "mort1960": "94.6",
+    "mort2015": "13.6",
+    "income1960": "4.0",
+    "income2015": "291.5",
+    "continent": "South-America"
+  },
+  {
+    "country": "Chile",
+    "mort1960": "127.7",
+    "mort2015": "7.3",
+    "income1960": "4.1",
+    "income2015": "242.5",
+    "continent": "South-America"
+  },
+  {
+    "country": "Afghanistan",
+    "mort1960": "363.7",
+    "mort2015": "73.2",
+    "income1960": "0.5",
+    "income2015": "19.7",
+    "continent": "Asia"
+  },
+  {
+    "country": "Bangladesh",
+    "mort1960": "262.3",
+    "mort2015": "36.3",
+    "income1960": "4.3",
+    "income2015": "195.1",
+    "continent": "Asia"
+  },
+  {
+    "country": "Denmark",
+    "mort1960": "21.3",
+    "mort2015": "3.6",
+    "income1960": "6.2",
+    "income2015": "301.3",
+    "continent": "Europe"
+  },
+  {
+    "country": "Belgium",
+    "mort1960": "29.4",
+    "mort2015": "3.2",
+    "income1960": "11.7",
+    "income2015": "455.0",
+    "continent": "Europe"
+  },
+  {
+    "country": "Austria",
+    "mort1960": "37.2",
+    "mort2015": "3",
+    "income1960": "6.6",
+    "income2015": "377.0",
+    "continent": "Europe"
+  }
+]

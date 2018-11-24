@@ -1,0 +1,103 @@
+/*
+  Name: Jurre Brandsen
+  Student number: 11808918
+
+  This script represents the percentage of elderly people per country per year, 
+  ranging from 1960 to 2016
+  
+  I have used a dataset from the Worldbank (https://data.worldbank.org)
+
+  You can switch through the years by using the slider.
+  The graph will update automaticly.
+
+  sources used:
+  - http://bl.ocks.org/jeremycflin/b43ab253f3ae02dced07
+  - http://benheb.github.io/d3.slider/
+  - http://blockbuilder.org/Fil/3b5b4db818d51e89223fa0057b980ce0
+*/
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1180px !important;
+    }
+}
+body {
+  background-color: #f1f1f1;
+}
+.names {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+}
+.n {
+    display: none;
+}
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+.error-actions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.error-actions .btn {
+    margin-right: 10px;
+}
+.axis line,
+.axis path {
+    shape-rendering: crispEdges;
+    fill: transparent;
+    stroke: none;
+}
+.axis text {
+    font-size: 13px;
+}
+#side {
+    margin-left: 15px;
+}
+.tick line {
+    stroke: none !important;
+}
+.bar {
+    fill-opacity: 0.5;
+}
+.bar.left {
+    fill: steelblue;
+}
+.bar.right {
+    fill: firebrick;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+.details {
+    color: white;
+}
+#value {
+  transition: all 0.3s;
+    display: block;
+    min-height: 30px;}

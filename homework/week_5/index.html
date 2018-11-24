@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Author: Jurre Brandsen" content="Scatterplot">
+    <title>Touchdowns</title>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/d3.v3.min.js"></script>
+    <script src="//labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/line-chart.png">
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header id="graphHeader">
+    <h2>WHEN ARE TOUCHDOWNS SCORED?</h2>
+    <p>
+      By: Jurre Brandsen, 11808918<br>
+      <br>
+        This graph displays the amount of touchdowns made per minute per quarter<br>
+        You can switch through the quarters by pressing buttons.<br>
+        The graph will update automaticly.<br>
+    </p>
+    <button type="button" value="0" name="quarter" class="btn btn-success quarter">1st Quarter</button>
+    <button type="button" value="1" name="quarter" class="btn btn-success quarter">2nd Quarter</button>
+    <button type="button" value="2" name="quarter" class="btn btn-success quarter">3rd Quarter</button>
+    <button type="button" value="3" name="quarter" class="btn btn-success quarter">4th Quarter</button>
+    <p>Current quarter: <span id="currentQuarter"></span></p>
+    </header>
+    <div><svg></svg></div>
+    <p>source: <a href="http://www.nflsavant.com/about.php">NFLsavant</a></p>
+  </body>
+</html>
+
+<!-- 
+  Name: Jurre Brandsen
+  Student number: 11808918
+
+  This script is used to make a multilinegraph
+  This graph displays the amount of touchdowns made per minute per quarter
+
+  You can switch through the quarters by pressing buttons.
+  The graph will update automaticly.
+
+  sources used:
+  - http://learnjsdata.com/group_data.html
+  - http://bl.ocks.org/WilliamQLiu/76ae20060e19bf42d774
+  - http://bl.ocks.org/wdickerson/64535aff478e8a9fd9d9facccfef8929
+-->

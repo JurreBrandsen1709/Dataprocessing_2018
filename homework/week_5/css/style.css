@@ -1,0 +1,61 @@
+body {
+  background-color: #000000;
+  background-image: url(../img/background.jpg);
+  background-size: 2300px;
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  width:90%;
+}
+h2 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+p {
+  color: white;
+}
+.legend text{
+  fill: white;
+}
+.axis {
+  fill: white;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: white;
+  shape-rendering: crispEdges;
+}
+path.line
+{
+  stroke-width: 2;
+  fill: none;
+}
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+.focus circle {
+    fill: none;
+}
+.mouse-per-line circle {
+  stroke-width: 2px !important;
+}
+/*
+  Name: Jurre Brandsen
+  Student number: 11808918
+
+  This script is used to make a multilinegraph
+  This graph displays the amount of touchdowns made per minute per quarter
+
+  You can switch through the quarters by pressing buttons.
+  The graph will update automaticly.
+
+  sources used:
+  - http://learnjsdata.com/group_data.html
+  - http://bl.ocks.org/WilliamQLiu/76ae20060e19bf42d774
+  - http://bl.ocks.org/wdickerson/64535aff478e8a9fd9d9facccfef8929
+*/
